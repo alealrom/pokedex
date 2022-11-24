@@ -20,3 +20,9 @@
     text-transform: uppercase;
     letter-spacing: 1.5px; 
 }
+
+@media only screen and (min-width: 768px) {
+    .header {
+        justify-content: left;  
+    }
+}
