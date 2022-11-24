@@ -5,11 +5,11 @@ import './Header.css';
 function Header() {
 
     return (
-        <header>
-           <img src={ pokedexLogo } alt="Logo pokédex." />
-           <h1>Pokédex</h1>
+        <header class='header'>
+           <img class='header__logo' src={ pokedexLogo } alt="Logo pokédex." />
+           <h1 class='header__title'>Pokédex</h1>
         </header>
-    )
+    );
 }
 
 export { Header };
