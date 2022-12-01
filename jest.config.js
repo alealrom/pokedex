@@ -90,9 +90,8 @@ module.exports = {
     // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
     // moduleNameMapper: {},
     moduleNameMapper: {
-      'assets/(.*)': [
-        '<rootDir>/__test__/assetsMock.js',
-      ],
+      'assets/(.*)': '<rootDir>/__test__/assetsMock.js',
+      "\\.(css)$": "<rootDir>/__test__/assetsMock.js"
     },
   
     // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
