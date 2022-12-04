@@ -1,0 +1,63 @@
+.randomCard {
+  box-sizing: border-box;
+  margin: 30px 0;
+}
+
+.randomCard__title {
+  text-align: center;
+}
+
+.randomCard__pokemons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  place-content: center;
+  gap: 20px;
+}
+
+.randomCard__details {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #808080;
+  filter: grayscale(90%);
+}
+
+.randomCard__details:hover{
+  filter: grayscale(0%);
+  transition:all .5s ease-in-out;
+  color: #000000;
+}
+
+.randomCard__image {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 130px;
+  height: 130px;
+  transform: translate(-50%, -50%);
+}
+
+.randomCard__pokemonName {
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translate(-30%, 135%);
+}
+
+@media only screen and (min-width: 960px) {
+  .randomCard {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .randomCard__pokemons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 100px;
+  }
+}

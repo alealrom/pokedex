@@ -1,48 +1,48 @@
 .card {
     width: 470px;
-    font-size: 25px;
-    text-transform: uppercase;
     margin: 0 auto;
+    font-size: 25px;
 }
 
 .card__header {
     display: flex;
-    justify-content: center;
-    align-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-content: center; 
 }
 
 .card__pokemonName {
-    color: #000000;
-    font-weight: 900;
-    background-color: #ffffff;
     padding: 10px 0px;
-    border-radius: 10px;
+    font-weight: 900;
     text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
 .card__pokemonImage {
     height: 256px;
     padding: 19px 0;
+    will-change: filter;
 }
 
 .card__body {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px 0 40px 0;
     margin-top: -35px;
+    padding: 20px 0 40px 0;
+    background-color: #ffffff;
+    border-radius: 10px; 
 }
 
 .card__pokemonDetails {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .card__pokemonTag {
-    font-weight: 900;
-    color: #808080;
     margin: 10px;
     padding: 0px 0px 0px 25%;
+    font-weight: 900;
+    color: #808080;  
 }
 
 .card__pokemonNumber,
@@ -51,20 +51,19 @@
 .card__pokemonHability,
 .card__pokemonHeight,
 .card__pokemonWeight {
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #000000;
     margin: 10px;
     padding: 0px 0px 0px 5%;
+    font-weight: 600;
+    color: #000000;
 }
 
 @media only screen and (min-width: 960px) {
     .card {
-        width: 940px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2,1fr);
         grid-template-rows: 1fr;
         column-gap: 20px;
+        width: 940px;
     }
 
     .card__pokemonName {
@@ -74,7 +73,7 @@
     .card__body {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
         margin-top: 0;
     }
 
@@ -95,8 +94,8 @@
     .card__pokemonHability,
     .card__pokemonHeight,
     .card__pokemonWeight {
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
   }
 

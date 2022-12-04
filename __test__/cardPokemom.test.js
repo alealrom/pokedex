@@ -57,4 +57,10 @@ describe('should get data from API', function(){
         expect(pokemonWeight).toBeDefined();
     })
 
+    test('should be exist a field for evolutions of the pokemon', function(){
+        let othersPokemon = screen.getByLabelText('othersPokemon');
+
+        expect(othersPokemon).toBeDefined();
+    })
+
 })

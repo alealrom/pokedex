@@ -1,9 +1,9 @@
 .header {
     display: flex;
+    margin-top: 30px;
     justify-content: center;
     align-content: center;
-    gap: 20px;
-    margin-top: 30px;
+    gap: 20px;   
 }
 
 .header__logo {
@@ -12,19 +12,18 @@
 }
 
 .header__logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #646cff);
 }
 
 .header__title {
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
     margin: 0;
+    font-size: 45px;
+    letter-spacing: 1.5px;
 }
 
 @media only screen and (min-width: 768px) {
     .header {
-        justify-content: left;
         margin: 30px;
+        justify-content: left;
     }
 }

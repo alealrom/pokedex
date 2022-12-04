@@ -9,8 +9,8 @@
 }
 
 .footer__link {
-    color: #3E52A3;
     text-decoration: underline;
+    color: #3E52A3;   
 }
 
 .footer__link:hover {
