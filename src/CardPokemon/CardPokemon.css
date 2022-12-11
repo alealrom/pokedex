@@ -2,6 +2,8 @@
     width: 470px;
     margin: 0 auto;
     font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 5px;   
 }
 
 .card__header {
@@ -15,9 +17,17 @@
     padding: 10px 0px;
     font-weight: 900;
     text-align: center;
-    color: #000000;
-    background-color: #ffffff;
     border-radius: 10px;
+}
+
+#dark .card__pokemonName {
+    color: #0a0a0a;
+    background-color: #fafbfd;
+}
+
+#light .card__pokemonName {
+    color: #0a0a0a;
+    background-color: #d0d0d0;
 }
 
 .card__pokemonImage {
@@ -28,9 +38,16 @@
 
 .card__body {
     margin-top: -35px;
-    padding: 20px 0 40px 0;
-    background-color: #ffffff;
+    padding: 40px 0 40px 0;
     border-radius: 10px; 
+}
+
+#dark .card__body {
+    background-color: #fafbfd;
+}
+
+#light .card__body {
+    background-color: #d0d0d0;
 }
 
 .card__pokemonDetails {
@@ -42,7 +59,7 @@
     margin: 10px;
     padding: 0px 0px 0px 25%;
     font-weight: 900;
-    color: #808080;  
+    color: #777777;  
 }
 
 .card__pokemonNumber,
@@ -54,16 +71,34 @@
     margin: 10px;
     padding: 0px 0px 0px 5%;
     font-weight: 600;
-    color: #000000;
+}
+
+#dark .card__pokemonNumber,
+#dark .card__pokemonEXP,
+#dark .card__pokemonType,
+#dark .card__pokemonHability,
+#dark .card__pokemonHeight,
+#dark .card__pokemonWeight {
+    color: #0a0a0a;
+}
+
+#light .card__pokemonNumber,
+#light .card__pokemonEXP,
+#light .card__pokemonType,
+#light .card__pokemonHability,
+#light .card__pokemonHeight,
+#light .card__pokemonWeight {
+    color: #0a0a0a;
 }
 
 @media only screen and (min-width: 960px) {
     .card {
         display: grid;
+        width: 940px;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 1fr;
         column-gap: 20px;
-        width: 940px;
+        padding-top: 26px;  
     }
 
     .card__pokemonName {

@@ -1,3 +1,24 @@
-#root {
-  margin: 0 auto;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#light {
+  color: #191919;
+  background-color: #e6e6e6;
+}
+
+#dark {
+  color: #e6e6e6;
+  background-color:  #191919;
+}
+
+.app__header{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.themeSwitch {
+  top: 50px;
 }

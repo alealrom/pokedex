@@ -22,8 +22,8 @@ function CardPokemon() {
       .catch((error) => console.error(error));
   }, []);
   return (
-    <main className="card">
-      <section key={currentPokemon.id} className="card__header">
+    <section className="card">
+      <article key={currentPokemon.id} className="card__header">
         <h2 aria-label="pokemonName" className="card__pokemonName">
           {currentPokemon.name ? currentPokemon.name : ""}
         </h2>
@@ -36,8 +36,8 @@ function CardPokemon() {
               : ""
           }
         />
-      </section>
-      <section className="card__body">
+      </article>
+      <article className="card__body">
         <article className="card__pokemonDetails">
           <p className="card__pokemonTag">No.</p>
           <p aria-label="pokemonNumber" className="card__pokemonNumber">
@@ -80,11 +80,11 @@ function CardPokemon() {
             {currentPokemon.weight ? currentPokemon.weight : ""}
           </p>
         </article>
-      </section>
-      <section aria-label="othersPokemon">
+      </article>
+      <article aria-label="othersPokemon">
         <img/>
-      </section>
-    </main>
+      </article>
+    </section>
   );
 }
 

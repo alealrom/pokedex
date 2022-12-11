@@ -33,8 +33,8 @@ function RandomPokemon() {
   }, []);
 
   return (
-    <main className="randomCard">
-      <h2 className="randomCard__title">Others</h2>
+    <section className="randomCard">
+      <h3 className="randomCard__title">Others</h3>
       <section className="randomCard__pokemons">
         {othersPokemon.map((pokemon) => (
           <article key={pokemon.id} className="randomCard__details">
@@ -53,7 +53,7 @@ function RandomPokemon() {
           </article>
         ))}
       </section>
-    </main>
+    </section>
   );
 }
 
