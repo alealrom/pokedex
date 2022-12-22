@@ -5,7 +5,6 @@ import "./RandomPokemon.css";
 function RandomPokemon() {
   const temporalPokemons = [];
   const [othersPokemon, setOtherPokemon] = useState([]);
-  console.log("Others", othersPokemon);
 
   useEffect(() => {
     const randomPokemonIds = [
@@ -14,7 +13,6 @@ function RandomPokemon() {
       Math.round(Math.random() * 150),
       Math.round(Math.random() * 150),
     ];
-    console.log("ids", randomPokemonIds);
 
     for (let i = 0; i < randomPokemonIds.length; i++) {
       let urlPokemon = POKEMON_API_BASE + "/" + randomPokemonIds[i];
@@ -28,7 +26,6 @@ function RandomPokemon() {
           }
         })
         .catch((error) => console.error(error));
-      console.log("Temporales", temporalPokemons);
     }
   }, []);
 

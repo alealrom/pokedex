@@ -1,26 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { POKEMON_API_BASE, GET_ALL_POKEMONS } from "../const/apiConst";
+import React from "react";
 import "./CardPokemon.css";
 
-function CardPokemon() {
-  const allPokemonsURL = `${POKEMON_API_BASE}${GET_ALL_POKEMONS}`;
-  const [allPokemon, setAllPokemon] = useState([]);
-  const [currentPokemon, setCurrentPokemon] = useState({});
-  const randomNumber = [ ]
-
-  useEffect(() => {
-    fetch(allPokemonsURL)
-      .then((allPokemonRes) => allPokemonRes.json())
-      .then((jsonAllPokemon) => {
-        setAllPokemon(jsonAllPokemon.results);
-
-        const firstURLPokemon = jsonAllPokemon.results[0].url;
-        return fetch(firstURLPokemon);
-      })
-      .then((pokemonRes) => pokemonRes.json())
-      .then((jsonCurrentPokemon) => setCurrentPokemon(jsonCurrentPokemon))
-      .catch((error) => console.error(error));
-  }, []);
+function CardPokemon({ currentPokemon }) {
   return (
     <section className="card">
       <article key={currentPokemon.id} className="card__header">
@@ -41,7 +22,7 @@ function CardPokemon() {
         <article className="card__pokemonDetails">
           <p className="card__pokemonTag">No.</p>
           <p aria-label="pokemonNumber" className="card__pokemonNumber">
-            {currentPokemon.order ? currentPokemon.order : ""}
+            {currentPokemon.id ? currentPokemon.id : ""}
           </p>
         </article>
         <article className="card__pokemonDetails">

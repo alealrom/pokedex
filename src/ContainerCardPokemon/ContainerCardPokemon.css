@@ -1,0 +1,32 @@
+.arrow {
+    position: fixed;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    background-color: transparent;
+    border: solid;
+    border-width: 0 5px 5px 0;  
+}
+
+#dark .arrow {
+    border-color: #fafbfd;
+}
+
+#light .arrow {
+    border-color: #0a0a0a;
+}
+
+.arrow--right {
+    top: 40%;
+    right: 5%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow--left {
+    top: 40%;
+    left: 5%;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
