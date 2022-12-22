@@ -3,7 +3,6 @@
     margin: 0 auto;
     font-size: 25px;
     text-transform: uppercase;
-    padding-bottom: 5px;   
 }
 
 .card__header {
@@ -34,12 +33,15 @@
     height: 256px;
     padding: 19px 0;
     will-change: filter;
+    z-index: 1;
 }
 
 .card__body {
-    margin-top: -35px;
+    position: relative;
+    top: -35px;
     padding: 40px 0 40px 0;
-    border-radius: 10px; 
+    border-radius: 10px;
+    z-index: 0;
 }
 
 #dark .card__body {
@@ -106,6 +108,7 @@
     }
 
     .card__body {
+        position: initial;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3, 1fr);

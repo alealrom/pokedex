@@ -1,12 +1,17 @@
+.containerCardPokemon {
+    position: relative;
+}
+
 .arrow {
-    position: fixed;
+    position: absolute;
     display: inline-block;
     height: 30px;
     width: 30px;
     padding: 3px;
     background-color: transparent;
     border: solid;
-    border-width: 0 5px 5px 0;  
+    border-width: 0 5px 5px 0;
+    z-index: 3;
 }
 
 #dark .arrow {
@@ -18,15 +23,15 @@
 }
 
 .arrow--right {
-    top: 40%;
-    right: 5%;
+    top: 37%;
+    right: 3%;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
 
 .arrow--left {
-    top: 40%;
-    left: 5%;
+    top: 37%;
+    left: 3%;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }

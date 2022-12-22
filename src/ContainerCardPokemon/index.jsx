@@ -32,11 +32,15 @@ function ContainerCardPokemon() {
   }, [indexCurrentPokemon]);
 
   return (
-    <section className="">
+    <section className="containerCarPokemon">
+      {indexCurrentPokemon > 0 ? (
       <button className="arrow arrow--left" onClick={clickPrev}>
       </button>
+      ) : null}
+      {indexCurrentPokemon < 150 ?(
       <button className="arrow arrow--right" onClick={clickNext}>
       </button>
+      ): null}
       <CardPokemon currentPokemon={ currentPokemon }/>
     </section>
   );
