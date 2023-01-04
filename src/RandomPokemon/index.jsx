@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { POKEMON_API_BASE } from "../const/apiConst";
 import "./RandomPokemon.css";
 
-function RandomPokemon() {
-  const temporalPokemons = [];
+function RandomPokemon({ othersPokemon }) {
+  /*const temporalPokemons = [];
   const [othersPokemon, setOtherPokemon] = useState([]);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ function RandomPokemon() {
         })
         .catch((error) => console.error(error));
     }
-  }, []);
+  }, []);*/
 
   return (
     <section className="randomCard">

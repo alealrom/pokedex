@@ -1,5 +1,6 @@
 .randomCard {
   box-sizing: border-box;
+  padding-bottom: 5px;
 }
 
 .randomCard__title {

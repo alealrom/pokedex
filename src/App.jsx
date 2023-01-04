@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import ReactSwitch from "react-switch";
 import { useThemeContext } from './context/ThemeContext';
 import { Header } from './Header';
-import { ContainerCardPokemon } from './ContainerCardPokemon';
-import { RandomPokemon } from './RandomPokemon';
+import { ContainerPokemons } from './ContainerPokemons';
 import { Footer } from './Footer';
 import './App.css'
 
@@ -36,8 +35,7 @@ function App() {
             className="themeSwitch"
             id="material-switch"/>
         </article>
-        <ContainerCardPokemon/>
-        <RandomPokemon/>
+        <ContainerPokemons/>
         <Footer/>
       </section>
     </React.Fragment>
